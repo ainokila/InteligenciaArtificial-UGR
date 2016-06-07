@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<!-- Pregunta INICIAL -->
+<category>
+ <pattern>MEJOR YO PREGUNTO</pattern>
+ <template>
+	<think>
+		<random>
+			
+			<li><set name="personaje">GABRIELA</set></li>
+			
+		</random>
+	</think>
+<get name="personaje"/>
+ 	Ya tengo mi personaje! Empieza :D
+ </template>
+</category>
+
+<!-- Pregunta pelo -->
+<category>
+ <pattern>* PELO MARRON ^</pattern>
+ <template>
+
+	<think>
+		<set var="aux"><map name="pelo"><get name="personaje"/></map></set>
+	</think>
+
+	<condition var = "aux" >
+		<li value="Marron">Si , tiene el pelo marron.</li>
+		<li>No tiene el pelo marron</li>
+	
+	</condition>
+ </template>
+</category>
+
+<category>
+ <pattern>* MORENO ^</pattern>
+ <template>
+
+	<think>
+		<set var="aux"><map name="pelo"><get name="personaje"/></map></set>
+	</think>
+
+	<condition var = "aux" >
+		<li value="Moreno">Si , tiene el pelo moreno.</li>
+		<li>No tiene el pelo moreno</li>
+	
+	</condition>
+ </template>
+</category>
+
+<category>
+ <pattern>* MORENA ^</pattern>
+ <template><srai>ES MORENO</srai></template>
+</category>
+
+<category>
+ <pattern>* PELO BLANCO ^</pattern>
+ <template>
+
+	<think>
+		<set var="aux"><map name="pelo"><get name="personaje"/></map></set>
+	</think>
+
+	<condition var = "aux" >
+		<li value="Blanco">Si , tiene el pelo blanco.</li>
+		<li>No tiene el pelo blanco</li>
+	
+	</condition>
+
+ </template>
+</category>
+
+<category>
+ <pattern>* RUBIO ^</pattern>
+ <template>
+
+	<think>
+		<set var="aux"><map name="pelo"><get name="personaje"/></map></set>
+	</think>
+
+	<condition var = "aux" >
+		<li value="Rubio">Si , tiene el pelo rubio.</li>
+		<li>No tiene el pelo rubio</li>
+	
+	</condition>
+ </template>
+</category>
+
+<category>
+ <pattern>* RUBIA ^</pattern>
+ <template><srai>ES RUBIO</srai></template>
+</category>
+
+
+<category>
+ <pattern>* PELIRROJO ^</pattern>
+ <template>
+
+	<think>
+		<set var="aux"><map name="pelo"><get name="personaje"/></map></set>
+	</think>
+
+	<condition var = "aux" >
+		<li value="Pelirrojo">Si , tiene el pelo pelirrojo.</li>
+		<li>No tiene el pelo pelirrojo</li>
+	
+	</condition>
+ </template>
+</category>
+
+<category>
+ <pattern>* PELIRROJA ^</pattern>
+ <template><srai>ES PELIRROJO</srai></template>
+</category>
+
+
+<category>
+ <pattern>ES CALVO ^</pattern>
+ <template>
+
+	<think>
+		<set var="aux"><map name="pelo"><get name="personaje"/></map></set>
+	</think>
+
+	<condition var = "aux" >
+		<li value="Calvo">Si , es calvo.</li>
+		<li>No es calvo </li>
+	
+	</condition>
+ </template>
+</category>
+
+<category>
+ <pattern>* CALVA ^</pattern>
+ <template><srai>ES CALVO</srai></template>
+</category>
+
+<category>
+ <pattern>* PELO *</pattern>
+ <template>No tiene el pelo <star index="2"/> </template>
+</category>
+
+
+
+<!-- Pregunta ojos -->
+<category>
+ <pattern>* OJOS CLAROS ^</pattern>
+ <template>
+
+	<think>
+		<set var="aux"><map name="ojos"><get name="personaje"/></map></set>
+	</think>
+
+	<condition var = "aux" >
+		<li value="Claros">Si , tiene los ojos claros</li>
+		<li>No tiene los ojos claros</li>
+	
+	</condition>
+ </template>
+</category>
+
+<category>
+ <pattern>* OJOS OSCUROS ^</pattern>
+ <template>
+
+	<think>
+		<set var="aux"><map name="ojos"><get name="personaje"/></map></set>
+	</think>
+
+	<condition var = "aux" >
+		<li value="Oscuros">Si , tiene los ojos oscuros</li>
+		<li>No tiene los ojos oscuros</li>
+	
+	</condition>
+ </template>
+</category>
+
+<category>
+ <pattern>* OJOS *</pattern>
+ <template>No tiene los ojos <star index="2"/> </template>
+</category>
+
+<!-- Pregunta piel -->
+<category>
+ <pattern>* PIEL CLARA ^</pattern>
+ <template>
+
+	<think>
+		<set var="aux"><map name="piel"><get name="personaje"/></map></set>
+	</think>
+
+	<condition var = "aux" >
+		<li value="Clara">Si , tiene la piel clara</li>
+		<li>No tiene la piel clara</li>
+	
+	</condition>
+ </template>
+</category>
+
+<category>
+ <pattern>* PIEL OSCURA ^</pattern>
+ <template>
+
+	<think>
+		<set var="aux"><map name="piel"><get name="personaje"/></map></set>
+	</think>
+
+	<condition var = "aux" >
+		<li value="Oscura">Si , tiene la piel oscura</li>
+		<li>No tiene la piel oscura</li>
+	
+	</condition>
+ </template>
+</category>
+
+
+<category>
+ <pattern>* PIEL *</pattern>
+ <template>No tiene la piel <star index="2"/> </template>
+</category>
+
+<!-- Pregunta Barba -->
+<category>
+ <pattern>* BARBA ^</pattern>
+ <template>
+
+	<think>
+		<set var="aux"><map name="barba"><get name="personaje"/></map></set>
+	</think>
+
+	<condition var = "aux" >
+		<li value="Barba">Si tiene barba</li>
+		<li value="Nobarba">No tiene barba</li>
+	
+	</condition>
+ </template>
+</category>
+
+<!-- Pregunta Bigote -->
+<category>
+ <pattern>* BIGOTE ^</pattern>
+ <template>
+
+	<think>
+		<set var="aux"><map name="bigote"><get name="personaje"/></map></set>
+	</think>
+
+	<condition var = "aux" >
+		<li value="Si">Si tiene bigote</li>
+		<li value="No">No tiene bigote</li>
+	
+	</condition>
+ </template>
+</category>
+
+<!-- Pregunta Gafas -->
+<category>
+ <pattern>* GAFAS ^</pattern>
+ <template>
+
+	<think>
+		<set var="aux"><map name="gafas"><get name="personaje"/></map></set>
+	</think>
+
+	<condition var = "aux" >
+		<li value="Gafas">Si lleva gafas</li>
+		<li value="Nogafas">No lleva gafas</li>
+	
+	</condition>
+ </template>
+</category>
+
+<!-- Pregunta Genero-->
+
+<category>
+ <pattern>^ ES ^ HOMBRE ^</pattern>
+ <template>
+
+	<think>
+		<set var="aux"><map name="genero"><get name="personaje"/></map></set>
+	</think>
+
+	<condition var = "aux" >
+		<li value="Hombre">Si es un hombre</li>
+		<li value="Mujer">No es un hombre</li>
+	
+	</condition>
+ </template>
+</category>
+
+<category>
+ <pattern>^ ES ^ MUJER ^</pattern>
+ <template>
+
+	<think>
+		<set var="aux"><map name="genero"><get name="personaje"/></map></set>
+	</think>
+
+	<condition var = "aux" >
+		<li value="Hombre">No es una mujer</li>
+		<li value="Mujer">Si es una mujer</li>
+	
+	</condition>
+ </template>
+</category>
+
+<!-- Pregunta FINAL-->
+<category>
+ <pattern>ES * TU PERSONAJE</pattern>
+ <template>
+
+	<condition name="personaje" >
+		<li><value><star index="1"/></value>Si !! Era <get name="personaje"/> , has ganado!! </li>
+		<li> No !! Es <get name="personaje"/> , has perdido!! Adios </li>
+	</condition>
+ </template>
+</category>
+
+<category>
+ <pattern>TU PERSONAJE ES *</pattern>
+ <template><srai>ES <star/> TU PERSONAJE</srai></template>
+</category>
+
+
+<!-- Informacion de los personajes -->
+
+<category>
+ <pattern>* ES MORENO</pattern>
+ <template>
+	<think>
+		<set var="aux"><map name="pelo"><star/></map></set>
+	</think>
+
+	<condition var = "aux" >
+		<li value="Moreno">Si , tiene el pelo moreno.</li>
+		<li>No</li>
+	
+	</condition>
+ </template>
+</category>
+
+<category>
+ <pattern>* ES MORENA</pattern>
+ <template><srai><star/> ES MORENO</srai></template>
+</category>
+
+<category>
+ <pattern>* ES RUBIO</pattern>
+ <template>
+	<think>
+		<set var="aux"><map name="pelo"><star/></map></set>
+	</think>
+
+	<condition var = "aux" >
+		<li value="Rubio">Si , tiene el pelo rubio.</li>
+		<li>No</li>
+	
+	</condition>
+ </template>
+</category>
+
+<category>
+ <pattern>* ES RUBIA</pattern>
+ <template><srai><star/> ES RUBIO</srai></template>
+</category>
+
+<category>
+ <pattern>* ES PELIRROJO</pattern>
+ <template>
+	<think>
+		<set var="aux"><map name="pelo"><star/></map></set>
+	</think>
+
+	<condition var = "aux" >
+		<li value="Pelirrojo">Si , tiene el pelo pelirrojo.</li>
+		<li>No</li>
+	
+	</condition>
+ </template>
+</category>
+
+<category>
+ <pattern>* ES PELIRROJA</pattern>
+ <template><srai><star/> ES PELIRROJO</srai></template>
+</category>
+
+<category>
+ <pattern>* TIENE EL PELO MARRON</pattern>
+ <template>
+	<think>
+		<set var="aux"><map name="pelo"><star/></map></set>
+	</think>
+
+	<condition var = "aux" >
+		<li value="Marron">Si , tiene el pelo marron.</li>
+		<li>No</li>
+	
+	</condition>
+ </template>
+</category>
+
+<category>
+ <pattern>* TIENE EL PELO BLANCO</pattern>
+ <template>
+	<think>
+		<set var="aux"><map name="pelo"><star/></map></set>
+	</think>
+
+	<condition var = "aux" >
+		<li value="Blanco">Si , tiene el pelo blanco.</li>
+		<li>No</li>
+	
+	</condition>
+ </template>
+</category>
+
+<category>
+ <pattern>* ES CALVO</pattern>
+ <template>
+	<think>
+		<set var="aux"><map name="pelo"><star/></map></set>
+	</think>
+
+	<condition var = "aux" >
+		<li value="Calvo">Si , es calvo.</li>
+		<li>No</li>
+	
+	</condition>
+ </template>
+</category>
+
+<category>
+ <pattern>* TIENE LA PIEL CLARA</pattern>
+ <template>
+	<think>
+		<set var="aux"><map name="piel"><star/></map></set>
+	</think>
+
+	<condition var = "aux" >
+		<li value="Clara">Si , tiene la piel clara.</li>
+		<li>No</li>
+	
+	</condition>
+ </template>
+</category>
+
+<category>
+ <pattern>* TIENE LA PIEL OSCURA</pattern>
+ <template>
+	<think>
+		<set var="aux"><map name="piel"><star/></map></set>
+	</think>
+
+	<condition var = "aux" >
+		<li value="Oscura">Si , tiene la piel oscura.</li>
+		<li>No</li>
+	
+	</condition>
+ </template>
+</category>
+
+<category>
+ <pattern>* TIENE LOS OJOS CLAROS</pattern>
+ <template>
+	<think>
+		<set var="aux"><map name="ojos"><star/></map></set>
+	</think>
+
+	<condition var = "aux" >
+		<li value="Claros">Si , tiene los ojos claros.</li>
+		<li>No</li>
+	
+	</condition>
+ </template>
+</category>
+
+<category>
+ <pattern>* TIENE LOS OJOS OSCUROS</pattern>
+ <template>
+	<think>
+		<set var="aux"><map name="ojos"><star/></map></set>
+	</think>
+
+	<condition var = "aux" >
+		<li value="Oscuros">Si , tiene los ojos oscuros.</li>
+		<li>No</li>
+	
+	</condition>
+ </template>
+</category>
+
+<category>
+ <pattern>* TIENE GAFAS</pattern>
+ <template>
+	<think>
+		<set var="aux"><map name="gafas"><star/></map></set>
+	</think>
+
+	<condition var = "aux" >
+		<li value="Gafas">Si , tiene gafas</li>
+		<li value="Nogafas">No</li>
+	
+	</condition>
+ </template>
+</category>
+
+<category>
+ <pattern>* TIENE BIGOTE</pattern>
+ <template>
+	<think>
+		<set var="aux"><map name="bigote"><star/></map></set>
+	</think>
+
+	<condition var = "aux" >
+		<li value="Si">Si , tiene bigote</li>
+		<li value="No">No</li>
+	
+	</condition>
+ </template>
+</category>
+
+<category>
+ <pattern>* TIENE BARBA</pattern>
+ <template>
+	<think>
+		<set var="aux"><map name="barba"><star/></map></set>
+	</think>
+
+	<condition var = "aux" >
+		<li value="Barba">Si , tiene barba</li>
+		<li value="Nobarba">No</li>
+	
+	</condition>
+ </template>
+</category>
+
+</aiml>

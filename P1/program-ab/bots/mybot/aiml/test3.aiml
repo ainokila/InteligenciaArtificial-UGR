@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+ <pattern>MEJOR YO RESPONDO</pattern>
+ <template>
+	<random>
+		<li>Es un hombre</li>
+		<li>Es una mujer</li>
+	</random>
+ </template>
+</category>
+
+<!-- Pregunta GENERO-->
+<category>
+ <pattern>NO</pattern>
+ <that>Es una mujer</that>
+ <template> 
+	 <think>
+	 	<set name="sexo">hombre</set>
+	 </think>
+ Tiene pelo
+ </template>
+</category>
+
+<category>
+ <pattern>SI</pattern>
+ <that>Es una mujer</that>
+ <template> 
+ <think>
+ 	<set name="sexo">mujer</set>
+ </think>Tiene el pelo moreno</template>
+</category>
+
+<!-- Pregunta GENERO-->
+<category>
+ <pattern>SI</pattern>
+ <that>Es un hombre</that>
+ <template> 
+ <think>
+ 	<set name="sexo">hombre</set>
+ </think>Tiene pelo</template>
+</category>
+
+<category>
+ <pattern>NO</pattern>
+ <that>Es un hombre</that>
+
+ <template>  
+ <think>
+ 	<set name="sexo">mujer</set>
+ </think>Tiene el pelo moreno</template>
+</category>
+
+<!-- Pregunta PELO MORENO MUJER-->
+
+<category>
+ <pattern>SI</pattern>
+ <that>Tiene el pelo moreno</that>
+
+ <template> 
+ <think>
+ 	<set name="pelo">moreno</set>
+ </think>Tiene la piel oscura</template>
+</category>
+
+<category>
+ <pattern>NO</pattern>
+ <that>Tiene el pelo moreno</that>
+ <template>Tiene el pelo rubio</template>
+</category>
+
+<!-- Pregunta  PIEL PELO MORENO MUJER-->
+
+<category>
+ <pattern>SI</pattern>
+ <that>Tiene la piel oscura</that>
+
+ <template> 
+ <think>
+ 	<set name="piel">oscura</set>
+ </think>Es Sonia</template>
+</category>
+
+<category>
+ <pattern>NO</pattern>
+ <that>Tiene la piel oscura</that>
+
+ <template> 
+ <think>
+ 	<set name="piel">clara</set>
+ </think>Es Cristina</template>
+</category>
+
+<!-- Pregunta PELO RUBIO MUJER-->
+
+<category>
+ <pattern>SI</pattern>
+ <that>Tiene el pelo rubio</that>
+
+ <template> 
+ <think>
+ 	<set name="pelo">rubio</set>
+ </think>Es Laura</template>
+</category>
+
+<category>
+ <pattern>NO</pattern>
+ <that>Tiene el pelo rubio</that>
+ <template>Tiene el pelo blanco</template>
+</category>
+
+<!-- Pregunta PELO BLANCO MUJER-->
+
+<category>
+ <pattern>SI</pattern>
+ <that>Tiene el pelo blanco</that>
+
+ <template> 
+ <think>
+ 	<set name="pelo">blanco</set>
+ </think>Es Gabriela</template>
+</category>
+
+<category>
+ <pattern>NO</pattern>
+ <that>Tiene el pelo blanco</that>
+ <template>Tiene el pelo pelirrojo</template>
+</category>
+
+<!-- Pregunta PELO PELIRROJO MUJER-->
+
+<category>
+ <pattern>SI</pattern>
+ <that>Tiene el pelo pelirrojo</that>
+
+ <template> 
+ <think>
+ 	<set name="pelo">pelirrojo</set>
+ </think>Es Maria</template>
+</category>
+
+<category>
+ <pattern>NO</pattern>
+ <that>Tiene el pelo pelirrojo</that>
+ <template>Tiene el pelo marron</template>
+</category>
+
+<!-- Pregunta PELO MARRON MUJER-->
+
+<category>
+ <pattern>SI</pattern>
+ <that>Tiene el pelo marron</that>
+
+ <template> 
+ <think>
+ 	<set name="pelo">marron</set>
+ </think>Es Sofia</template>
+</category>
+
+<category>
+ <pattern>NO</pattern>
+ <that>Tiene el pelo marron</that>
+ <template>Eres un tramposo , no hay nadie :S ¿Quieres volver a jugar?</template>
+</category>
+
+<!-- Pregunta HOMBRE-->
+<category>
+ <pattern>SI</pattern>
+ <that>Tiene pelo</that>
+ <template>Tiene el chico el pelo moreno</template>
+</category>
+
+<category>
+ <pattern>NO</pattern>
+ <that>Tiene pelo</that>
+
+ <template> 
+ <think>
+ 	<set name="pelo">calvo</set>
+ </think>Tiene los ojos claros el calvo</template>
+</category>
+
+<!-- Pregunta CALVO HOMBRE-->
+<category>
+ <pattern>SI</pattern>
+ <that>Tiene los ojos claros el calvo</that>
+
+ <template> 
+ <think>
+ 	<set name="ojos">claros</set>
+ </think>Es Marco</template>
+</category>
+
+<category>
+ <pattern>NO</pattern>
+ <that>Tiene los ojos claros el calvo</that>
+
+ <template> 
+ <think>
+ 	<set name="ojos">oscuros</set>
+ </think>Es Juan</template>
+</category>
+
+<!-- Pregunta NO CALVO HOMBRE-->
+<category>
+ <pattern>SI</pattern>
+ <that>Tiene el chico el pelo moreno</that>
+
+ <template> 
+ <think>
+ 	<set name="pelo">moreno</set>
+ </think>Tiene los ojos claros</template>
+</category>
+
+<category>
+ <pattern>NO</pattern>
+ <that>Tiene el chico el pelo moreno</that>
+ <template>Tiene el chico el pelo rubio</template>
+</category>
+
+<!-- Pregunta NO CALVO HOMBRE-->
+<category>
+ <pattern>SI</pattern>
+ <that>Tiene el chico el pelo rubio</that>
+
+ <template> 
+ <think>
+ 	<set name="pelo">rubio</set>
+ </think>Tiene bigote el rubio</template>
+</category>
+
+<category>
+ <pattern>NO</pattern>
+ <that>Tiene el chico el pelo rubio</that>
+ <template>Tiene el chico el pelo pelirrojo</template>
+</category>
+
+<!-- Pregunta NO CALVO HOMBRE-->
+<category>
+ <pattern>SI</pattern>
+ <that>Tiene bigote el rubio</that>
+
+ <template> 
+ <think>
+ 	<set name="bigote">bigote</set>
+ </think>Es Paco</template>
+</category>
+
+<category>
+ <pattern>NO</pattern>
+ <that>Tiene bigote el rubio</that>
+ <template>Es Ivan</template>
+</category>
+
+<!-- Pregunta NO CALVO HOMBRE-->
+<category>
+ <pattern>SI</pattern>
+ <that>Tiene el chico el pelo pelirrojo</that>
+
+ <template> 
+ <think>
+ 	<set name="pelo">pelirrojo</set>
+ </think>Tiene los ojos oscuros</template>
+</category>
+
+<category>
+ <pattern>NO</pattern>
+ <that>Tiene el chico el pelo pelirrojo</that>
+ <template>Me estas engañando... ¿Quieres volver a jugar?</template>
+</category>
+
+<!-- Pregunta NO CALVO HOMBRE-->
+<category>
+ <pattern>SI</pattern>
+ <that>Tiene los ojos oscuros</that>
+
+ <template>
+  <think>
+ 	<set name="ojos">oscuros</set>
+ </think>Es Pepe</template>
+</category>
+
+<category>
+ <pattern>NO</pattern>
+ <that>Tiene los ojos oscuros</that>
+ <template>Es Luis</template>
+</category>
+
+<!-- Pregunta MORENO NO CALVO HOMBRE-->
+<category>
+ <pattern>SI</pattern>
+ <that>Tiene los ojos claros</that>
+
+ <template> 
+ <think>
+ 	<set name="ojos">claros</set>
+ </think>Es Alfonso</template>
+</category>
+
+<category>
+ <pattern>NO</pattern>
+ <that>Tiene los ojos claros</that>
+ <template>Tiene barba</template>
+</category>
+
+<!-- Pregunta OJOS CLAROS MORENO NO CALVO HOMBRE-->
+<category>
+ <pattern>SI</pattern>
+ <that>Tiene barba</that>
+
+ <template> 
+ <think>
+ 	<set name="barba">barba</set>
+ </think>Es Antonio</template>
+</category>
+
+<category>
+ <pattern>NO</pattern>
+ <that>Tiene barba</that>
+ <template>Tiene bigote</template>
+</category>
+
+<!-- Pregunta OJOS CLAROS MORENO NO CALVO HOMBRE-->
+<category>
+ <pattern>SI</pattern>
+ <that>Tiene bigote</that>
+
+ <template> 
+ <think>
+ 	<set name="bigote">bigote</set>
+ </think>Es Javier</template>
+</category>
+
+<category>
+ <pattern>NO</pattern>
+ <that>Tiene bigote</that>
+ <template>Es Alejandro</template>
+</category>
+
+<!-- COMPROBACIONES-->
+<category>
+ <pattern>SI</pattern>
+ <that>Es *</that>
+ <template>Ganeee !! ¿Quieres volver a jugar?</template>
+</category>
+
+<category>
+ <pattern>NO ERA <set>personajes</set></pattern>
+ <that>Es *</that>
+ <template> 
+	<think>
+		<set name="personaje"><star/></set>
+		<set var="gafas1"><map name="gafas"><get name="personaje"/></map></set>
+		<set var="bigote1"><map name="bigote"><get name="personaje"/></map></set>
+		<set var="barba1"><map name="gafas"><get name="personaje"/></map></set>
+
+	</think>
+
+	<star/> es <map name="genero"><get name="personaje"/></map> , con pelo <map name="pelo"><get name="personaje"/></map>
+	Ojos <map name="ojos"><get name="personaje"/></map>, Piel <map name="piel"><get name="personaje"/></map>,
+
+	<condition var = "gafas1" >
+		<li value="Gafas">Tiene gafas</li>
+	</condition>
+
+	<condition var = "bigote1" >
+		<li value="Si">Tiene bigote</li>
+	</condition>
+
+	<condition var = "barba1" >
+		<li value="Barba">Tiene barba</li>
+	</condition>
+
+	Y tu me has dicho :
+	Es <get name="sexo"/> con pelo <get name="pelo"/>,
+	<condition name = "piel" >
+		<li value="oscura">Piel oscura</li>
+		<li value="clara">Piel clara</li>
+	</condition>
+	<condition name = "ojos" >
+		<li value="unknown"></li>
+		<li>ojos <get name="ojos"/></li>
+	</condition>
+	<condition name = "bigote" >
+		<li value="bigote">Tiene bigote</li>
+	</condition>
+	<condition name = "barba" >
+		<li value="bigote">Tiene barba</li>
+	</condition>
+
+	¿Quieres volver a jugar?
+</template>
+</category>
+
+<category>
+ <pattern>NO ERA *</pattern>
+ <that>Es *</that>
+ <template><star/> no es un personaje , ¿Quieres volver a jugar?</template>
+</category>
+
+<category>
+ <pattern>ERA *</pattern>
+ <template>
+	<srai>NO ERA <star/></srai>
+ </template>
+</category>
+
+<category>
+ <pattern>SI</pattern>
+ <template>
+	<srai>MEJOR YO RESPONDO</srai>
+ </template>
+</category>
+
+<category>
+ <pattern>NO</pattern>
+ <template>Hasta pronto!!</template>
+</category>
+
+
+
+</aiml>

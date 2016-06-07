@@ -1,0 +1,16 @@
+ALEJANDRO:Nogafas
+ALFONSO:Nogafas
+ANTONIO:Nogafas
+CRISTINA:Nogafas
+GABRIELA:Nogafas
+IVAN:Nogafas
+JAVIER:Nogafas
+JUAN:Nogafas
+LAURA:Nogafas
+LUIS:Nogafas
+MARCO:Nogafas
+MARIA:Gafas
+PACO:Nogafas
+PEPE:Gafas
+SOFIA:Gafas
+SONIA:Nogafas

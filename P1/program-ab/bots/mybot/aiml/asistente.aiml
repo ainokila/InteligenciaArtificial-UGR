@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<!-- Pregunta n 1 -->
+<category>
+ <pattern>_ APRUEBO IA</pattern>
+ <template>Obteniendo un 5 o mas entre ambas partes de la asignatura.</template>
+</category>
+
+<!-- Pregunta n 2 -->
+<category>
+ <pattern>_ APROBAR ^ TEORIA</pattern>
+ <template>Obteniendo un 5 , cogiendo la nota minima y sumandole la nota de parciales obtenida</template>
+</category>
+
+<!-- Pregunta n 3 -->
+<category>
+ <pattern>_ SUPERAR ^ PARTE PRACTICA</pattern>
+ <template>Obteniendo un 5 , con la suma de todas las practicas.</template>
+</category>
+
+<!-- Pregunta n 4 -->
+<category>
+ <pattern>_ EVALUA ^ CONVOCATORIA ^ JUNIO</pattern>
+ <template>Un 50% de la nota de teoria y 50% de nota de practicas.</template>
+</category>
+
+<!-- Pregunta n 5 -->
+<category>
+ <pattern>_ PASA SI ^ PRESENTARME ^ SEPTIEMBRE</pattern>
+ <template>Solo hay un examen final escrito unico</template>
+</category>
+
+<!-- Pregunta n 6 -->
+<category>
+ <pattern>_ EXAMEN * PRACTICAS ^ SEPTIEMBRE</pattern>
+ <template>No , no hay examen.</template>
+</category>
+
+<!-- Pregunta n 7 -->
+<category>
+ <pattern>QUE _ SI NO PUEDO _ A CLASE ^</pattern>
+ <template>Deberias solicitar la evaluacion unica al departamento.</template>
+</category>
+
+<!-- Pregunta n 8 -->
+<category>
+ <pattern>_ NOTA MINIMA ^ APROBAR</pattern>
+ <template>Si la nota minima es un 3</template>
+</category>
+
+<!-- Pregunta n 9 -->
+<category>
+ <pattern>_ PRACTICAS ^ OBLIGATORIAS</pattern>
+ <template>No , pero la nota es un requisito para aprobar</template>
+</category>
+
+<!-- Pregunta n 10 -->
+<category>
+ <pattern> _ VALE ^ PRACTICA ^ RESPECTO ^ NOTA FINAL</pattern>
+ <template>Cada practica puntua un 25%</template>
+</category>
+
+<!-- Pregunta n 11 -->
+<category>
+ <pattern>_  PARTICIPACION ^ NOTA FINAL</pattern>
+ <template>Un 10% de practicas , un 5% del total de la asignatura.</template>
+</category>
+
+<!-- Pregunta n 12 -->
+<category>
+ <pattern>_ GUION DE ^ PRACTICAS _ NOTA FINAL</pattern>
+ <template>Cada practica pondera con un 25% de la nota final de practicas</template>
+</category>
+
+<!-- Pregunta n 13 -->
+<category>
+ <pattern>_ PUNTOS ^ PARTICIPACION</pattern>
+ <template>Asistencia y participando en clase</template>
+</category>
+
+<!-- Pregunta n 14 -->
+<category>
+ <pattern>_ MINIMO ^ NECESITO ^ APROBAR ^ ASIGNATURA</pattern>
+ <template>Un 3 de nota</template>
+</category>
+
+<!-- Pregunta n 15 -->
+<category>
+ <pattern>^ TRABAJOS ^ INDIVIDUALES</pattern>
+ <template>Los trabajos son individuales</template>
+</category>
+
+<!-- Pregunta n 16 -->
+<category>
+ <pattern>^ PUEDEN HACER ^ EN GRUPO</pattern>
+ <template>No , es individual</template>
+</category>
+
+<!-- Pregunta n 17 -->
+<category>
+ <pattern>_ ENTREGAR ^ EJERCICIOS ^ RELACIONES ^ PROBLEMAS</pattern>
+ <template>Se realizan mediante decsai</template>
+</category>
+
+<!-- Pregunta n 18 -->
+<category>
+ <pattern>* TENGO ^ ESTUDIAR</pattern>
+ <template>Para aprobar IA</template>
+</category>
+
+<!-- Pregunta n 19 -->
+<category>
+ <pattern>_ VALE ^ PRIMER EXAMEN ^ TEORIA</pattern>
+ <template>No lo se aun , preguntamelo mas tarde</template>
+</category>
+
+<!-- Pregunta n 20 -->
+<category>
+ <pattern>PUEDO _  NOTA MAYOR A 10</pattern>
+ <template>La nota final va en el rango [0,10]</template>
+</category>
+
+<!-- Pregunta n 21 -->
+<category>
+ <pattern>_ RECUPERAR ^ PRACTICA ^ EXAMEN</pattern>
+ <template>No se pueden recuperar</template>
+</category>
+
+<!-- Pregunta n 22 -->
+<category>
+ <pattern>_ COPIO ^ OTRO ^</pattern>
+ <template>Estas suspenso y vas a septiembre</template>
+</category>
+
+<!-- Pregunta n 23 -->
+<category>
+ <pattern>_  DEJO COPIAR ^ OTRO ^</pattern>
+ <template>Estas suspenso y vas a septiembre , al igual que el/ella</template>
+</category>
+
+<!-- Pregunta n 24 -->
+<category>
+ <pattern>* SI SUSPENDO ^ JUNIO</pattern>
+ <template>Tienes otra oportunidad en Septiembre</template>
+</category>
+
+<!-- Pregunta n 25 -->
+<category>
+ <pattern>_ VALE ^ PRACTICA ^ TEORIA</pattern>
+ <template>Cada una un 50% de la asignatura</template>
+</category>
+
+<!-- Pregunta n 26 -->
+<category>
+ <pattern>_ HORARIO ^ TUTORIAS ^ PROFESOR ^ PRACTICAS</pattern>
+ <template>Debes consultarlo en la pagina de DECSAI</template>
+</category>
+
+<!-- Pregunta n 27 -->
+<category>
+ <pattern>_ CORREO ^ PROFESOR ^ TEORIA</pattern>
+ <template>Su correo es mdelgado(a)decsai.ugr.es</template>
+</category>
+
+<!-- Pregunta n 28 -->
+<category>
+ <pattern>_ APROBAR ^ PRACTICA ^ ASIGNATURA SI NO PRESENTO ^ PRACTICA</pattern>
+ <template>Si , si la media entre las restantes , da al menos un 5</template>
+</category>
+
+<!-- Pregunta n 29 -->
+<category>
+ <pattern>_ NOTA MINIMA ^ OBTENER ^ CADA PARTE ^ MEDIA</pattern>
+ <template>Necesitas al menos un 3 para que pueda hacer media</template>
+</category>
+
+<!-- Pregunta n 30 -->
+<category>
+ <pattern>_ OBTENGO ^ PRACTICA 1 SI OPTO POR DEFENDER EL NIVEL 3 Y NO LO SUPERO</pattern>
+ <template>Obtendrias la puntuacion maxima del nivel anterior.</template>
+</category>
+
+<!-- Pregunta n 31 -->
+<category>
+ <pattern>^ ENTREGAR LA PRACTICA ^ SIN HACER LA TAREA ^ NIVEL 0</pattern>
+ <template>Si , pero puede que tu calificacion sea un 0</template>
+</category>
+
+<!-- Pregunta n 32 -->
+<category>
+ <pattern>_ HACER SI NO PUEDO _ A LA SESION DE PRACTICAS _ HACER LA DEFENSA DE MI PRACTICA 1</pattern>
+ <template>Ponerte en contacto con el profesor o presentar un justificante</template>
+</category>
+
+<!-- Pregunta n 33 -->
+<category>
+ <pattern>CUANTAS PRUEBAS TEORICAS _ CURSO</pattern>
+ <template>3 pruebas</template>
+</category>
+
+<!-- Pregunta n 34 -->
+<category>
+ <pattern>_ PRIMERA PRUEBA TEORICA</pattern>
+ <template>Puntua 0,5</template>
+</category>
+
+<!-- Pregunta n 35 -->
+<category>
+ <pattern>_ PARTE TEORICA ^ CUENTA ^ ASISTENCIA</pattern>
+ <template>Si puntua , al menos pasa lista </template>
+</category>
+
+<!-- Pregunta n 36 -->
+<category>
+ <pattern>_ CONSISTE _ EXAMEN ^ EJERCICIOS</pattern>
+ <template>Un examen con varios ejercicios , para calificar un 25%</template>
+</category>
+
+<!-- Pregunta n 37 -->
+<category>
+ <pattern>_ NO ^ DEFENDER _ PRACTICA</pattern>
+ <template>Perderas la calificacion</template>
+</category>
+
+<!-- Pregunta n 38 -->
+<category>
+ <pattern>_ HACER SI NO ESTOY SEGURO ^ SUPERAR EL NIVEL 3 DE LA PRACTICA 1</pattern>
+ <template>Piensatelo , te quedaras si no con la nota del nivel 1</template>
+</category>
+
+<!-- Pregunta n 39 -->
+<category>
+ <pattern>CUANTAS PRACTICAS ^ LA ASIGNATURA</pattern>
+ <template>4 practicas</template>
+</category>
+
+<!-- Pregunta n 40 -->
+<category>
+ <pattern>^ PROGRAMO ^ BIEN ^ C++ PODRIA ^ PRACTICAS ^</pattern>
+ <template></template>
+</category>
+
+<!-- Pregunta n 41 -->
+<category>
+ <pattern>ODIO AIML _ HACER LAS PRACTICAS _ OTRO LENGUAJE</pattern>
+ <template>No podras</template>
+</category>
+
+<!-- Pregunta n 42 -->
+<category>
+ <pattern>DONDE * PROFESOR * PRACTICAS</pattern>
+ <template>D23 de la ETSIIT</template>
+</category>
+
+<!-- Pregunta n 43 -->
+<category>
+ <pattern>DONDE * PROFESOR * TEORIA</pattern>
+ <template>D36 de la ETSIIT</template>
+</category>
+
+<!-- Pregunta n 44 -->
+<category>
+ <pattern>* 15 PUNTOS EN ^ PRACTICAS ^ APROBAR LAS PRACTICAS</pattern>
+ <template>Nooo</template>
+</category>
+
+<!-- Pregunta n 45 -->
+<category>
+ <pattern>* 20 PUNTOS ^ PRACTICAS ^  APROBAR LA ASIGNATURA</pattern>
+ <template>Nooo , nononono</template>
+</category>
+
+<!-- Pregunta n 46 -->
+<category>
+ <pattern>_ TARDE * NO PUDE HACER LA PRACTICA 1 * RECUPERAR * PRACTICA</pattern>
+ <template>No puedes , esfuerzate en las siguientes </template>
+</category>
+
+<!-- Pregunta n 47 -->
+<category>
+ <pattern>_ TARDE * NO PUDE HACER LA PRACTICA 1 * APROBAR * PARTE PRACTICA</pattern>
+ <template>Claro que puedes aprobar , solo necesitas hacer las demas</template>
+</category>
+
+<!-- Pregunta n 48 -->
+<category>
+ <pattern>* AGENTES CONVERSACIONALES ^ SOY UN EXPERTO * DEFENSA ^</pattern>
+ <template>Si pasan el test de turing si ( obviamente no puedes )</template>
+</category>
+
+<!-- Pregunta n 49 -->
+<category>
+ <pattern>_ PRACTICAS HAY ^ QUE PROGRAMAR</pattern>
+ <template>Si , asi es amigo</template>
+</category>
+
+<!-- Pregunta n 50 -->
+<category>
+ <pattern>* NIVEL 0 ^ FACIL * COMPLICA MUCHO</pattern>
+ <template>Un poquito mas , vamos a jugar a un juego...</template>
+</category>
+
+</aiml>

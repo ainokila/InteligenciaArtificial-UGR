@@ -1,0 +1,16 @@
+ALEJANDRO:Hombre
+ALFONSO:Hombre
+ANTONIO:Hombre
+CRISTINA:Mujer
+GABRIELA:Mujer
+IVAN:Hombre
+JAVIER:Hombre
+JUAN:Hombre
+LAURA:Mujer
+LUIS:Hombre
+MARCO:Hombre
+MARIA:Mujer
+PACO:Hombre
+PEPE:Hombre
+SOFIA:Mujer
+SONIA:Mujer

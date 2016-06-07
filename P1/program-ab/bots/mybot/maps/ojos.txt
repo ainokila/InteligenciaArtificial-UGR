@@ -1,0 +1,16 @@
+ALEJANDRO:Oscuros
+ALFONSO:Claros
+ANTONIO:Oscuros
+CRISTINA:Claros
+GABRIELA:Claros
+IVAN:Claros
+JAVIER:Oscuros
+JUAN:Oscuros
+LAURA:Claros
+LUIS:Claros
+MARCO:Claros
+MARIA:Oscuros
+PACO:Claros
+PEPE:Oscuros
+SOFIA:Oscuros
+SONIA:Claros

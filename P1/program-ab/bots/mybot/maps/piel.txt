@@ -1,0 +1,16 @@
+ALEJANDRO:Oscura
+ALFONSO:Clara
+ANTONIO:Oscura
+CRISTINA:Clara
+GABRIELA:Clara
+IVAN:Clara
+JAVIER:Oscura
+JUAN:Oscura
+LAURA:Clara
+LUIS:Clara
+MARCO:Clara
+MARIA:Clara
+PACO:Clara
+PEPE:Clara
+SOFIA:Clara
+SONIA:Oscura
